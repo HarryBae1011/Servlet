@@ -27,6 +27,7 @@ public class ControllerV4Adapter implements MyHandlerAdapter {
 
         String viewName = controller.process(paramMap, model);
 
+        //어댑터는 ModelView를 반환해야 하므로 여기에서 ModelView를 생성
         ModelView mv = new ModelView(viewName);
         mv.setModel(model);
 
